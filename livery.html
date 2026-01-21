@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&family=M+PLUS+1:wght@100..900&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <title>Red Bull 2026 Livery</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header header_reveal">
+        <div class="header_bg"></div>
+        <nav class="nav_bar">
+          <a href="index.html"><p class="rb_home_txt">Red Bull</p></a>
+          <div class="sub_nav">
+            <a href="powertrain.html"><p class="set_white">POWERUNITS</p></a>
+            <a href="fia.html"><p class="set_white">FIA 2026</p></a>
+            <a href="season.html"><p class="set_white">2026 SEASON</p></a>
+          </div>
+        </nav>
+        <div class="logo_sect">
+          <img src="media/rb_logo.png" alt="" class="rb_logo" />
+        </div>
+      </header>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">Red Bull Racing 2026 Livery</h2>
+        <p class="about_rb_text">
+          The 2026 Red Bull Racing livery is explained by the team to represent
+          the start of new era for the team as the 2026 rule change is called
+          the new era. While maintaining the iconic navy base, the design is
+          sharper, refined, and visual elements reflecting the Ford powertrain
+          partnership and the new Formula One regulations.
+        </p>
+      </section>
+      <section class="red_bull_now section_reveal">
+        <h2 class="about_rb_title_now">Whats Behind The Design</h2>
+
+        <div class="about_rb_subsect_now">
+          <img
+            src="media/rb22.jpg"
+            alt="Red Bull 2026 Livery"
+            class="about_rb_now_img"
+          />
+          <p class="about_rb_text_now">
+            The charging bull graphic is more integrated into the sides, while
+            yellow and red highlight accents, of the new more compact chassis.
+            Ford branding appears alongside other sponsors, maintaining Red
+            Bull’s aggressive while keeping the car looking clean.
+          </p>
+        </div>
+      </section>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">2026 Livery Reveal</h2>
+
+        <div class="iframe_wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/5ZJZpG6zZxE"
+            title="Red Bull 2026 Livery Reveal"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p class="about_rb_text iframe_text">
+          The official reveal, talking about the 2026 livery design reasons.
+        </p>
+      </section>
+
+      <section class="red_bull_now section_reveal">
+        <h2 class="about_rb_title_now">Livery Colors</h2>
+
+        <div class="table_wrapper">
+          <table class="rb_table">
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Description</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="rb_highlight">
+                <td>Base Color</td>
+                <td>Navy Blue</td>
+                <td>Brand Identity</td>
+              </tr>
+              <tr>
+                <td>Accent Colors</td>
+                <td>Red & Yellow</td>
+                <td>Highlight Aerodynamic Lines</td>
+              </tr>
+              <tr>
+                <td>Ford Branding</td>
+                <td>Subtle Side Markings</td>
+                <td>New Powertrain Partnership</td>
+              </tr>
+              <tr>
+                <td>Number Styling</td>
+                <td>Modern Angular Typeface</td>
+                <td>Improved Visibility</td>
+              </tr>
+              <tr>
+                <td>Finish</td>
+                <td>Matte And Shiny Paint</td>
+                <td>Design Choice + Weight Reduction</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">Why the Livery Matters</h2>
+        <p class="about_rb_text">
+          In Formula One, a livery is more than just appearance — it reflects
+          partnerships, aerodynamics, and team. The 2026 Red Bull livery
+          balances heritage with innovation, visually showing the beginning of a
+          new era, and the teams attitude.
+        </p>
+      </section>
+
+      <footer class="footer_nav section_reveal">
+        <div class="footer_col">
+          <p class="footer_title">Team</p>
+          <p class="footer_text">Oracle Red Bull Racing</p>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">Design</p>
+          <p class="footer_text">2026 Livery</p>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">Season</p>
+          <p class="footer_text">Formula One 2026</p>
+        </div>
+        <div class="footer_copy">© 2026 Anatolii Stanchevskyi</div>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector(".header_reveal");
+        const sections = document.querySelectorAll(".section_reveal");
+
+        setTimeout(() => {
+          header.classList.add("active");
+        }, 50);
+
+        function revealOnScroll() {
+          sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+              section.classList.add("active");
+            } else {
+              section.classList.remove("active");
+            }
+          });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+      });
+    </script>
+  </body>
+</html>

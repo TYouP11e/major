@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&family=M+PLUS+1:wght@100..900&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <title>F1 2026 Season</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header header_reveal">
+        <div class="header_bg"></div>
+        <nav class="nav_bar">
+          <a href="index.html"><p class="rb_home_txt">Red Bull</p></a>
+          <div class="sub_nav">
+            <a href="powertrain.html"><p class="set_white">POWERUNITS</p></a>
+            <a href="livery.html"><p class="set_white">LIVERY</p></a>
+            <a href="fia.html"><p class="set_white">FIA 2026</p></a>
+          </div>
+        </nav>
+        <div class="logo_sect">
+          <img src="media/rb_logo.png" alt="" class="rb_logo" />
+        </div>
+      </header>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">2026 Formula One Season</h2>
+        <p class="about_rb_text">
+          The 2026 Formula One season marks the beginning of a new era. With new
+          regulations, new power units, and new manufacturer involvement, teams
+          are undergoing major development to adapt to the future of Formula 1.
+        </p>
+      </section>
+      <section class="red_bull_now section_reveal">
+        <h2 class="about_rb_title_now">What Teams Are Working On</h2>
+
+        <div class="about_rb_subsect_now">
+          <img
+            src="media/dev.jpg"
+            alt="F1 2026 development"
+            class="about_rb_now_img"
+          />
+          <p class="about_rb_text_now">
+            As the 2026 season approaches, teams are focusing heavily on
+            hybrid energy, battery efficiency, and
+            aerodynamics. Development and software optimization are
+            now just as important as traditional wind tunnel testing.
+          </p>
+        </div>
+      </section>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">2026 Season Talks</h2>
+
+        <p class="about_rb_text">
+          <strong>Red Bull Ford Powertrains</strong> are finalizing their first
+          fully self built engine, showing performance with reliability under
+          the new electrical output limits.
+        </p>
+
+        <p class="about_rb_text">
+          <strong>Mercedes</strong> continue refining energy recovery systems,
+          aiming to regain their dominance through efficiency and strategic
+          deployment.
+        </p>
+
+        <p class="about_rb_text">
+          <strong>Ferrari</strong> are investing heavily in lightweight chassis
+          design to complement the new hybrid architecture.
+        </p>
+
+        <p class="about_rb_text">
+          <strong>Other Teams</strong> are expected to benefit most from the
+          regulation reset, with closer performance gaps.
+        </p>
+      </section>
+      <section class="red_bull_now section_reveal">
+        <h2 class="about_rb_title_now">Teams, Drivers & Cars – 2026</h2>
+
+        <div class="table_wrapper">
+          <table class="rb_table">
+            <thead>
+              <tr>
+                <th>Team</th>
+                <th>Drivers</th>
+                <th>Car</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="rb_highlight">
+                <td>Oracle Red Bull Racing</td>
+                <td>Max Verstappen / Sergio Pérez</td>
+                <td>RB22-26</td>
+              </tr>
+              <tr>
+                <td>Mercedes AMG F1</td>
+                <td>Lewis Hamilton / George Russell</td>
+                <td>W17</td>
+              </tr>
+              <tr>
+                <td>Ferrari</td>
+                <td>Charles Leclerc / Carlos Sainz</td>
+                <td>SF-26</td>
+              </tr>
+              <tr>
+                <td>McLaren</td>
+                <td>Lando Norris / Oscar Piastri</td>
+                <td>MCL60-26</td>
+              </tr>
+              <tr>
+                <td>Aston Martin</td>
+                <td>Fernando Alonso / Lance Stroll</td>
+                <td>AMR26</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">Why the 2026 Season Is Important</h2>
+        <p class="about_rb_text">
+          The 2026 season is more than just a new season — it represents
+          Formula One’s transition toward future, and technological innovation. Success in this season could
+          define team performance for the rest of the decade.
+        </p>
+      </section>
+      <footer class="footer_nav section_reveal">
+        <div class="footer_col">
+          <p class="footer_title">Credit to</p>
+          <p class="footer_text">Formula One 2026</p>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">Credit to</p>
+          <p class="footer_text">Teams and Drivers</p>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">Credit to</p>
+          <p class="footer_text">FIA 2026</p>
+        </div>
+        <div class="footer_copy">© 2026 Anatolii Stanchevskyi</div>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector(".header_reveal");
+        const sections = document.querySelectorAll(".section_reveal");
+
+        setTimeout(() => {
+          header.classList.add("active");
+        }, 50);
+
+        function revealOnScroll() {
+          sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+              section.classList.add("active");
+            } else {
+              section.classList.remove("active");
+            }
+          });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+      });
+    </script>
+  </body>
+</html>

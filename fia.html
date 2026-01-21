@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&family=M+PLUS+1:wght@100..900&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <title>FIA 2026 Regulations</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header header_reveal">
+        <div class="header_bg"></div>
+        <nav class="nav_bar">
+          <a href="index.html"><p class="rb_home_txt">Red Bull</p></a>
+          <div class="sub_nav">
+            <a href="powertrain.html"><p class="set_white">POWERUNITS</p></a>
+            <a href="livery.html"><p class="set_white">LIVERY</p></a>
+            <a href="season.html"><p class="set_white">2026 SEASON</p></a>
+          </div>
+        </nav>
+        <div class="logo_sect">
+          <img src="media/rb_logo.png" alt="" class="rb_logo" />
+        </div>
+      </header>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">FIA 2026 Regulations</h2>
+
+        <p class="about_rb_text">
+          The 2026 FIA Formula One regulations represent one of the most radical
+          technical resets in the sport’s history. Designed for closer racing, and manufacturer relevance, the new
+          rule set reshapes both the cars and power units,
+          changing how teams design, race, and compete.
+        </p>
+      </section>
+      <section class="red_bull_now section_reveal">
+        <h2 class="about_rb_title_now">What Changed in 2026</h2>
+
+        <div class="about_rb_subsect_now">
+          <img
+            src="media/concept.jpg"
+            alt="2026 F1 Car Concept"
+            class="about_rb_now_img"
+          />
+          <p class="about_rb_text_now">
+            The 2026 cars are smaller, lighter, and more electrically driven.
+            Aerodynamics have been simplified to improve overtaking, The power unit now produces 50% of its power from
+            electrical energy, making energy management a factor
+            during races.
+          </p>
+        </div>
+      </section>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">2026 Car & Power Unit Explained</h2>
+
+        <div class="iframe_wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/9FqkE3nN4Xk"
+            title="FIA 2026 Regulations Explained"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p class="about_rb_text iframe_text">
+          FIA visual breakdown
+        </p>
+      </section>
+      <section class="red_bull_now section_reveal">
+        <h2 class="about_rb_title_now">Car Comparison: Before vs 2026</h2>
+
+        <div class="table_wrapper">
+          <table class="rb_table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Pre-2026 Cars</th>
+                <th>2026 Cars</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Power Unit</td>
+                <td>ICE-dominant hybrid</td>
+                <td>50% Electric Output</td>
+              </tr>
+              <tr>
+                <td>Fuel</td>
+                <td>Hybrid fuel</td>
+                <td>100% Sustainable Fuel</td>
+              </tr>
+              <tr>
+                <td>Aerodynamics</td>
+                <td>Complex ground effect</td>
+                <td>Simplified + Active Aero</td>
+              </tr>
+              <tr>
+                <td>Car Weight</td>
+                <td>~798 kg</td>
+                <td>~768 kg</td>
+              </tr>
+              <tr>
+                <td>Overtaking</td>
+                <td>DRS-dependent</td>
+                <td>Active Aero & Energy Use</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">Why the 2026 Rules Matter</h2>
+
+        <p class="about_rb_text">
+          For teams, the 2026 rules introduce complexity. Power
+          unit manufacturers must balance energy levels, battery deployment,
+          and temperatures while designing within strict cost caps.
+        </p>
+
+        <p class="about_rb_text">
+          Strategically, the regulations aim to attract new manufacturers,
+          reduce performance gaps, and align Formula 1 with future road-car
+          technologies — ensuring the sport remains relevant.
+        </p>
+      </section>
+      <footer class="footer_nav section_reveal">
+        <div class="footer_col">
+          <p class="footer_title">Credits to</p>
+          <p class="footer_text">Formula One 2026 Rule Set</p>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">Credits to</p>
+          <p class="footer_text">Teams • Drivers • Manufacturers</p>
+        </div>
+        <div class="footer_copy">© 2026 Anatolii Stanchevskyi</div>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector(".header_reveal");
+        const sections = document.querySelectorAll(".section_reveal");
+
+        setTimeout(() => {
+          header.classList.add("active");
+        }, 50);
+
+        function revealOnScroll() {
+          sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+              section.classList.add("active");
+            } else {
+              section.classList.remove("active");
+            }
+          });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+      });
+    </script>
+  </body>
+</html>
