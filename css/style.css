@@ -112,7 +112,6 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
-  margin-top: 5%;
 }
 .rb_read_more_now {
   margin-left: auto;
@@ -310,16 +309,16 @@ body {
 
 .rb_table th {
   background: #2e5f87;
-  color: #e30118;
+  color: #AD9169;
   font-size: 1.6rem;
 }
 
 .rb_table tr:hover {
-  background: rgba(227, 1, 24, 0.15);
+  background: #AD9169;
 }
 
 .rb_highlight {
-  background: rgba(227, 1, 24, 0.25);
+  background: #AD9169;
   font-weight: bold;
 }
 
