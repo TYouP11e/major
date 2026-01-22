@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&family=M+PLUS+1:wght@100..900&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <title>Middle of Midsummer Nights Dream</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header header_reveal">
+        <div class="header_bg"></div>
+        <nav class="nav_bar">
+          <a href="index.html"
+            ><p class="rb_home_txt">Shakespeare And The Play</p></a
+          >
+          <div class="sub_nav">
+            <a href="index.html"><p class="set_white">OVERVIEW</p></a>
+            <a href="start.html"><p class="set_white">START</p></a>
+            <a href="end.html"><p class="set_white">END</p></a>
+          </div>
+        </nav>
+        <div class="logo_sect">
+          <p class="rb_logo">MIDSUMMER NIGHTS DREAM</p>
+        </div>
+      </header>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">The Fairies</h2>
+        <p class="about_rb_text">
+          In the middle of the play, the action is in the forest, where magic
+          plays a big role. Oberon has an argument with Titania. Oberon tells
+          Puck to use a magical flower that makes people fall in love with the
+          first person they see. But unfortunatelly his description of Demetrius
+          is not clear enough so Puck mistakes Lysander for Demetrius. Causing a
+          conflict in the four lovers subplot.
+        </p>
+      </section>
+      <section class="red_bull_now section_reveal">
+        <h2 class="about_rb_title_now">The Love Potion Mistake</h2>
+
+        <div class="about_rb_subsect_now">
+          <img
+            src="media/oberon.jpg"
+            alt="F1 2026 development"
+            class="about_rb_now_img special"
+          />
+          <p class="about_rb_text_now">
+            Puck's action, causes Lysander to fall in love with Helena, so he
+            forgets about Hermia saying he never loved her and it was just to
+            get Helenas attention. Later, Demetrius is also under effect of
+            Puck's love potion, falls in love with Helena. This leaves Helena
+            mad as she thinks its all a joke Hermia decided to play on her.
+            While Hermia is left confused and heartbroken.
+          </p>
+        </div>
+      </section>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">The Mechanicals</h2>
+        <p class="about_rb_text">
+          During their rehearsal, bottom is turned into a donkey by Oberon to
+          mess with Titania, when his friends see him, they are scared away, so
+          they are split up and are out of play for timebeing.
+        </p>
+      </section>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">Quick Summary For This Section</h2>
+
+        <p class="about_rb_text">
+          <strong>Oberon and Titania</strong> are in a conflict for a servant,
+          but Oberon is also interested in the young lovers while causing chaos
+          in Titania's life by using the love potion on her and she sees Bottom
+          as a donkey.
+        </p>
+
+        <p class="about_rb_text">
+          <strong>Young Lovers</strong> continue to fight for love, espessially
+          Lysander and Demetrius who are both in love with Helena, while Hermia
+          and Helena accuse each other for different reasons.
+        </p>
+
+        <p class="about_rb_text">
+          <strong>Mechanicals</strong> Due to Bottom being turned into a donkey
+          by Obero, the rest of the mechanicals are scared away, while Bottom is
+          with Titania.
+        </p>
+      </section>
+      <section class="red_bull_now section_reveal">
+        <h2 class="about_rb_title_now">Plot And Its Current Development</h2>
+
+        <div class="table_wrapper">
+          <table class="rb_table">
+            <thead>
+              <tr>
+                <th>Characters</th>
+                <th>Importance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The Young Lovers</td>
+                <td>Conflict Still Developing With A Lot Of Magic Involved</td>
+              </tr>
+              <tr>
+                <td>Fairies</td>
+                <td>Oberon Is Still Playing Jokes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">Why The Events Are Important</h2>
+        <p class="about_rb_text">
+          These events are important because it develops the topic of love in the play, showing the impact of magic on love and in general. This supports Shakespeare's main idea in the play, love and how it can be unfair, manipulative, and heartbreaking.
+        </p>
+      </section>
+      <footer class="footer_nav section_reveal">
+        <div class="footer_col">
+          <p class="footer_title">Group</p>
+          <p class="footer_text">Tolik, Dai, Dillon</p>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">Info</p>
+          <p class="footer_text">Dai, Dillon</p>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">Images</p>
+          <p class="footer_text">Dai</p>
+        </div>
+        <div class="footer_copy">© 2026 Anatolii Stanchevskyi, Dai Schmidt, Dillon Swain</div>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector(".header_reveal");
+        const sections = document.querySelectorAll(".section_reveal");
+
+        setTimeout(() => {
+          header.classList.add("active");
+        }, 50);
+
+        function revealOnScroll() {
+          sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+              section.classList.add("active");
+            } else {
+              section.classList.remove("active");
+            }
+          });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+      });
+    </script>
+  </body>
+</html>

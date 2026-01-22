@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&family=M+PLUS+1:wght@100..900&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <title>start of the story of midsummer nights dream</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header header_reveal">
+        <div class="header_bg"></div>
+        <nav class="nav_bar">
+          <a href="index.html"
+            ><p class="rb_home_txt">Shakespeare And The Play</p></a
+          >
+          <div class="sub_nav">
+            <a href="index.html"><p class="set_white">OVERVIEW</p></a>
+            <a href="middle.html"><p class="set_white">MIDDLE</p></a>
+            <a href="end.html"><p class="set_white">END</p></a>
+          </div>
+        </nav>
+        <div class="logo_sect">
+          <p class="rb_logo">MIDSUMMER NIGHTS DREAM</p>
+        </div>
+      </header>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">Theseus' Wedding</h2>
+        <p class="about_rb_text">
+          At the start of A Midsummer Night’s Dream, the play is set in Athens.
+          Theseus is planning his wedding, with Hippolyta being not as excited
+          about the event, helping with character development in the play. This
+          event is important not only for opening the plot, but setting the mood
+          for the opening of the play. However, a problem appears when Egeus
+          demands that his daughter Hermia marry Demetrius, even though she
+          loves Lysander. Opening the first conflict in the play.
+        </p>
+      </section>
+      <section class="red_bull_now section_reveal">
+        <h2 class="about_rb_title_now">
+          The Young Lovers And Their Forbidden Love
+        </h2>
+
+        <div class="about_rb_subsect_now">
+          <img
+            src="media/hermia.jpg"
+            alt="Red Bull 2026 Livery"
+            class="about_rb_now_img"
+          />
+          <p class="about_rb_text_now">
+            Hermia refuses to obey her father, which is against the law. Theseus
+            tells her she must either marry Demetrius, become a nun, or face
+            death. Because of this, Hermia and Lysander decide to escape into
+            the forest to be together. But on their way out of Athens they tell
+            their plan to Helena which turns out to be a mistake in the future.
+          </p>
+        </div>
+      </section>
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">
+          Quick Overview Of The Events In This Section
+        </h2>
+
+        <div class="iframe_wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/trRjRzn062M"
+            title="Overview"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p class="about_rb_text iframe_text">
+          Helena, is in love with Demetrius, but he does not love her back.
+          Hoping that her plan helps their one way love, Helena tells Demetrius
+          about Hermia and Lysander’s plan. Helena's plan is extremely important
+          to the play as it opens a side plot for the readers, or audience of
+          the play to solve, besides the marriage of Theseus and Hippolyta.
+        </p>
+      </section>
+
+      <section class="red_bull_now section_reveal">
+        <h2 class="about_rb_title_now">Character Importance And Role</h2>
+
+        <div class="table_wrapper">
+          <table class="rb_table">
+            <thead>
+              <tr>
+                <th>Character</th>
+                <th>Description</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Theseus</td>
+                <td>Duke Of Athens</td>
+                <td>Initiates Conflict</td>
+              </tr>
+              <tr>
+                <td>Lysander</td>
+                <td>Hermia's Lover</td>
+                <td>Cause Of The Whole Conflict</td>
+              </tr>
+              <tr>
+                <td>Hermia</td>
+                <td>Egues' Daughter</td>
+                <td>
+                  Does Not listen To Egeus, Is Given The Unfair Choice To Make,
+                  Part Of Conflict
+                </td>
+              </tr>
+              <tr>
+                <td>Helena</td>
+                <td>Hermia's Friend</td>
+                <td>Provokes The Love Conflict</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="about_rb section_reveal">
+        <h2 class="about_rb_title">The Opening Of The Plot</h2>
+        <p class="about_rb_text">
+          These events are important because they create the main conflict of
+          the play. Love problems and strict rules lead the characters into the
+          forest, mechanicals because it is a secret place to rehearse, lovers -
+          forbidden love. Where the magic and chaos of the story will happen.
+        </p>
+      </section>
+
+      <footer class="footer_nav section_reveal">
+        <div class="footer_col">
+          <p class="footer_title">Group</p>
+          <p class="footer_text">Tolik, Dillon, Dai</p>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">Information And Pictures</p>
+          <p class="footer_text">Dai, Dillon</p>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">Video</p>
+          <p class="footer_text">YouTube - schooling online</p>
+        </div>
+        <div class="footer_copy">
+          © 2026 Anatolii Stanchevskyi, Dai Schmidt, Dillon Swain
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector(".header_reveal");
+        const sections = document.querySelectorAll(".section_reveal");
+
+        setTimeout(() => {
+          header.classList.add("active");
+        }, 50);
+
+        function revealOnScroll() {
+          sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+              section.classList.add("active");
+            } else {
+              section.classList.remove("active");
+            }
+          });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+      });
+    </script>
+  </body>
+</html>
